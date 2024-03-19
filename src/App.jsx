@@ -18,6 +18,7 @@ import ContactUs from  './pages/ContactUs.jsx';
 import Blog from './pages/blog.jsx';
 import Profile from './components/profile.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductInfo from './pages/ProductInfo.jsx';
 
 
 const App = () => {
@@ -49,7 +50,8 @@ const App = () => {
         <Route path="/cart" element={<Cart />} /> 
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/checkout" element={<Checkout />} />   
-        <Route path="/products" element={<Products />} />   
+        <Route path="/products" element={<Products />} />  
+        <Route path='/:id' element={<ProductInfo/>} />
         <Route path="/clientregister" element={<Client_register />} />   
         <Route path="/cart" element={<GoogleApiWrapper />} />   
         <Route exact path="*" element={<Notfound />} />
