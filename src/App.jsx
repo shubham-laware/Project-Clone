@@ -15,7 +15,7 @@ import Products from "./pages/Products.jsx";
 import Client_register from "./client/pages/Client_registre.jsx";
 import Clientdashboard from "./client/pages/Client_dashboard.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
-import Blog from "./pages/Blog.jsx";
+import Blog from "./pages/blog.jsx";
 import Profile from "./components/profile.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AddBlog from "./pages/AddBlog.jsx";
