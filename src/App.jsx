@@ -19,6 +19,7 @@ import Blog from './pages/blog.jsx';
 import Profile from './components/profile.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductInfo from './pages/ProductInfo.jsx';
+import AddBlog from './pages/AddBlog.jsx';
 
 
 const App = () => {
@@ -52,13 +53,14 @@ const App = () => {
         <Route path="/checkout" element={<Checkout />} />   
         <Route path="/products" element={<Products />} />  
         <Route path='/:id' element={<ProductInfo/>} />
+        <Route exact path="/contact" element={<ContactUs />} />
+        <Route exact path="/blog" element={<Blog />} />
+        <Route path='/add-blog' element={<AddBlog/>} />
+        <Route exact path="/profile" element={<Profile />} />
         <Route path="/clientregister" element={<Client_register />} />   
         <Route path="/cart" element={<GoogleApiWrapper />} />   
         <Route exact path="*" element={<Notfound />} />
         <Route exact path="/cdashboard" element={<Clientdashboard />} />
-        <Route exact path="/contact" element={<ContactUs />} />
-        <Route exact path="/blog" element={<Blog />} />
-        <Route exact path="/profile" element={<Profile />} />
 
       </Routes>
    

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { ListGroup, Image, Button } from "react-bootstrap";
 import axios from "axios";
 
@@ -63,11 +64,12 @@ function Blog() {
 
       <Button
         variant="success"
-        href="/add-blog"
+        // href="/add-blog"
         className="mt-3 mx-auto "
         style={{ width: "max-content" }}
       >
-        Add a new Blog Post
+        <Link to={'/add-blog'}>
+        <span className="text-white" style={{ textDecoration: 'none !important' }}>Add a new Blog Post</span></Link>
       </Button>
     </div>
   );
