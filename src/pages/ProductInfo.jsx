@@ -23,14 +23,14 @@ function ProductInfo() {
           </div>
 
 
-          <div className='container w-100'>
-          <div className="row py-2">
+          <div className='container w-100 px-md-4'>
+          <div className="row py-2 px-md-4">
               <div className="py-4 d-flex flex-column gap-2 ">
-                <h2 className=" fs-5 text-start">Best Sellers</h2>
+                <h2 className=" fs-5 text-center text-md-start">Best Sellers</h2>
                 <BestSeller />
               </div>
               <div className="py-4 d-flex flex-column gap-2 ">
-                <h2 className=" fs-5 text-start">Recommendations</h2>
+                <h2 className=" fs-5 text-center text-md-start">Recommendations</h2>
                 <Recommendations />
               </div>
             </div>

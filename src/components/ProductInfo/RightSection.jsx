@@ -10,7 +10,6 @@ function RightSection({ productId }) {
 
   const item = products.filter((product) => product.id === id);
   const product = item[0];
-  console.log(product);
   return (
     <section className="w-100 md:w-50 px-md-4 ">
       <div className=" d-flex flex-column gap-2 ">
@@ -30,7 +29,7 @@ function RightSection({ productId }) {
             </div>
           </div>
 
-          <h2>{product.productTitle}</h2>
+          <h2 style={{textAlign:'justify'}}>{product.productTitle}</h2>
 
           <div className="d-flex  gap-4 align-items-center w-100 ">
             <div className="d-flex align-items-center  gap-2 ">
@@ -168,13 +167,13 @@ function RightSection({ productId }) {
           <div className="  h-100 d-flex flex-column">
             <div className=" position-relative " style={{ height: "158px" }}>
               <textarea
-                className=" border h-100 w-100 rounded-top p-2"
+                className=" h-100 w-100 rounded-top p-2"
                 rows="5"
                 placeholder="Enter comments"
-                style={{ resize: "none", outline: "none" }}
+                style={{ resize: "none", outline: "none",}}
               ></textarea>
             </div>
-            <button className="py-1 border bg-body-secondary  rounded-bottom w-100">
+            <button className="py-1  bg-body-secondary  rounded-bottom w-100 "  style={{border:'solid 1px', borderColor: '#a29898' }}>
               Send
             </button>
           </div>

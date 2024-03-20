@@ -10,10 +10,9 @@ function CarouselComponent({productId}) {
     const item= products.filter(product=>product.id===id)
     const product=item[0];
    const images=product.images
-   console.log('images',images)
 
     return (
-      <div id="carouselExampleIndicators" className=" carousel slide v" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" className="  carousel slide v" data-bs-ride="carousel">
         <div className="carousel-inner rounded">
           {images.map((img, index) => (
             <div key={index} className={` carousel-item${index === 0 ? ' active' : ''}`} >

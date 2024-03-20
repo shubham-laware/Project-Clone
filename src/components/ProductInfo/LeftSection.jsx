@@ -10,7 +10,6 @@ function LeftSection({ productId }) {
 
   const item = products.filter((product) => product.id === id);
   const product = item[0];
-  console.log(product);
   return (
     <section className="w-100 md:w-50 d-flex flex-column gap-4  position-relative px-md-4">
       <div className="w-100  rounded-lg position-relative" >
@@ -66,7 +65,7 @@ function LeftSection({ productId }) {
 
       <div className="  d-flex flex-column  py-2 rounded gap-4">
         <div className="d-flex flex-column gap-1 border rounded px-4 pt-3">
-          <h2 className=" fs-4 ">Ratings & Reviews</h2>
+          <h2 className=" fs-4 text-start">Ratings & Reviews</h2>
           <div className="d-flex fl ">
             <div className="w-50 d-flex flex-column  gap-2 ">
               <span className="fs-1">{product.rating}</span>

@@ -4,6 +4,7 @@ import Filter from '../components/Filter';
 import Ban from '../components/images/product.png'
 import { Link } from 'react-router-dom';
 import { products } from '../components/ProductInfo/data.js';
+import StarRatings from '../components/ProductInfo/StarRatings.jsx';
 
 const HomeProducts = () => {
 return(
@@ -27,7 +28,7 @@ return(
                     {products.map((product,index)=>
                          <div key={index} className="col-6 col-sm-3 py-2  ">
                          <div className="product-card  ">
-                             <Link to={`/${product.id}`}>
+                         <Link to={`/${product.id}`} style={{ textDecoration: 'none',color:'black' }}>
                              <div className="product-image">
                                  <img src={product.imageurl}   alt="Product 1"/>
                                 
@@ -41,7 +42,7 @@ return(
                              <h5>Price: <sup>&#x20B9;</sup>{product.price}<span className='text-decoration-line-through text-muted fs-6 fw-light'>599</span>
                              <span className='text-muted' style={{fontSize:'13px'}}> {product.stock}</span></h5>
                              <p className="product-rating text-warning">
-                                 Rating: &#9733;&#9733;&#9733;&#9733;&#9734;  
+                                 Rating: <StarRatings rating={product.rating}/> 
                              </p>
                              <p className="product-distance text-secondary ">
                                 Distance: {product.distance}km away.
