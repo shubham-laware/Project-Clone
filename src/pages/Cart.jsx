@@ -63,7 +63,7 @@ const Cart = () => {
                         defaultValue={1}
                         min={0}
                         type="number"
-                        className="form-control"
+                        className="form-control text-center"
                         placeholder="Quantity"
                       />
                       <button className="btn btn-primary px-3 ms-2">
@@ -115,7 +115,7 @@ const Cart = () => {
                         defaultValue={1}
                         min={0}
                         type="number"
-                        className="form-control"
+                        className="form-control text-center"
                         placeholder="Quantity"
                       />
                       <button className="btn btn-primary px-3 ms-2">
