@@ -20,6 +20,7 @@ import Profile from "./components/profile.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AddBlog from "./pages/AddBlog.jsx";
 
+
 const App = () => {
     const location = useLocation();
 
@@ -43,6 +44,7 @@ const App = () => {
         <>
             {showHeader() && <Header />}
 
+
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/signin" element={<Login />} />
@@ -62,6 +64,7 @@ const App = () => {
                 <Route exact path="/add-blog" element={<AddBlog />} />
                 <Route exact path="/profile" element={<Profile />} />
             </Routes>
+
 
             {showFooter() && <Footer />}
         </>
