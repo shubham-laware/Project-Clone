@@ -13,10 +13,10 @@ function CarouselComponent({productId}) {
    console.log('images',images)
 
     return (
-      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" className=" carousel slide v" data-bs-ride="carousel">
         <div className="carousel-inner rounded">
           {images.map((img, index) => (
-            <div key={index} className={` carousel-item${index === 0 ? ' active' : ''}`}>
+            <div key={index} className={` carousel-item${index === 0 ? ' active' : ''}`} >
               <img className="d-block w-100" src={img} alt={`Slide ${index}`} />
             </div>
           ))}

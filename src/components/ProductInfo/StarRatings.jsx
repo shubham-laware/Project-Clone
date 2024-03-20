@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiStar } from 'react-icons/bi';
-function StarRatings({ star1, star2, star3, star4, star5 }) {
-    return (
-      <div className="text-18px">
-        <BiStar className={star1} />
-        <BiStar className={star2} />
-        <BiStar className={star3} />
-        <BiStar className={star4} />
-        <BiStar className={star5} />
-      </div>
-    );
+
+function StarRatings({ rating, onRatingChange }) {
+  const [hoverRating, setHoverRating] = useState(0);
+
+  const starStyle = (ratingValue) => ({
+    display: 'inline-block',
+    color: ratingValue <= rating ? '#ffc107' : '#ccc',
+  });
+
+  return (
+    <div className="star-rating">
+      {[...Array(5)].map((_, index) => {
+        const ratingValue = index + 1;
+        return (
+          <span key={ratingValue} style={starStyle(ratingValue)}>
+            &#9733;
+          </span>
+        );
+      })}
+    </div>
+  );
   }
   
   export default StarRatings;
