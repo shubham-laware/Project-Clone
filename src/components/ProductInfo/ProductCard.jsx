@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import StarRatings from './StarRatings'
 
 function ProductCard({product}) {
   return (
@@ -18,10 +19,10 @@ function ProductCard({product}) {
         <h6>{product.productTitle} </h6>
         <h5>Price: <sup>&#x20B9;</sup>{product.price}<span className='text-decoration-line-through text-muted fs-6 fw-light'>599</span>
         <span className='text-muted' style={{fontSize:'13px'}}> {product.stock}</span></h5>
-        <p className="product-rating text-warning">
-            Rating: &#9733;&#9733;&#9733;&#9733;&#9734;  
-        </p>
-        <p className="product-distance text-secondary ">
+        <div className="product-rating text-warning">
+            Rating: <StarRatings rating={product.rating}/> 
+        </div>
+        <p className="product-distance text-secondary  pt-2">
            Distance: {product.distance}km away.
         </p>
         

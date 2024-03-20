@@ -40,9 +40,9 @@ export const products=[
 
     {
         id:'3',
-        imageurl:'https://res.cloudinary.com/dyr3thlt0/image/upload/v1710757546/MinitGo/wzviphdlrhdefqjrcw0w.jpg',
+        imageurl:'https://res.cloudinary.com/dyr3thlt0/image/upload/v1710757256/MinitGo/dh3oxqtltlwwzg1slhwi.jpg',
         images:[
-            'https://res.cloudinary.com/dyr3thlt0/image/upload/v1710757546/MinitGo/wzviphdlrhdefqjrcw0w.jpg',
+            'https://res.cloudinary.com/dyr3thlt0/image/upload/v1710757256/MinitGo/dh3oxqtltlwwzg1slhwi.jpg',
         'https://res.cloudinary.com/dyr3thlt0/image/upload/v1710472252/MinitGo/o4rhuomalpmglb0qdvi3.jpg',
         'https://res.cloudinary.com/dyr3thlt0/image/upload/v1710472252/MinitGo/je0r2wzhd3rkhdgoozq9.jpg',
         ],

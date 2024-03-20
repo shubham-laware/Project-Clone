@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { BiStar } from 'react-icons/bi';
 
-function StarRatings({ rating, onRatingChange }) {
-  const [hoverRating, setHoverRating] = useState(0);
+function StarRatings({ rating }) {
 
   const starStyle = (ratingValue) => ({
     display: 'inline-block',
